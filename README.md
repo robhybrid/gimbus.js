@@ -1,7 +1,7 @@
 gimbus.js
 =========
 
-A small library providing utility methods to `shorten` and `unshorten` URLs using http://gimb.us/'s API.
+A small library providing utility methods to `shorten` and `unshorten` URLs using [http://gimb.us/'s](http://gimb.us/) API.
 
 ## Installation
 
@@ -9,7 +9,7 @@ A small library providing utility methods to `shorten` and `unshorten` URLs usin
 
 ## Usage
 
-  var gimbus = require('gimbus');
+  `var gimbus = require('gimbus');
   var url = "http://ashley.re";
   gimbus.shorten(url);  // if no callback is specified, it'll use console.log as a callback
   gimbus.shorten(url,function(short_url) {
@@ -17,12 +17,12 @@ A small library providing utility methods to `shorten` and `unshorten` URLs usin
   	gimbus.unshorten(short_url,function(url) {
   		console.log(short_url,"points to",url);
   	})
-  });
+  });`
 
-  ~$ node test.js 
+  `~$ node test.js 
   http://gimb.us/VHCL1
   Shortened URL is: http://gimb.us/VHCL1
-  http://gimb.us/VHCL1 points to http://ashley.re
+  http://gimb.us/VHCL1 points to http://ashley.re`
 
 ## Tests
 

@@ -1,6 +1,6 @@
 {
   "name": "gimbus",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Node.js API for gimb.us (http://gimb.us) URL shortener.",
   "main": "index.js",
   "scripts": {
