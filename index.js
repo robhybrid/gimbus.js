@@ -28,7 +28,7 @@ function unshorten(url,callback) {
 		function(error, response, body) {
 			var loc = response.headers['location']
 			if(loc == undefined) loc = url
-			callback(url)
+			callback(loc)
 		}
 	);
 }
