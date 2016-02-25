@@ -9,9 +9,9 @@ function shorten(url,callback) {
 				url: url
 			}
 		},
-		
+
 		function(error, response, body) {
-			callback("http://gimb.us/"+body)
+			callback("http://gimb.us/"+body.replace(' ', ''))
 		}
 	);
 }
@@ -24,7 +24,7 @@ function unshorten(url,callback) {
 			method: "HEAD",
 			followRedirect: false
 		},
-		
+
 		function(error, response, body) {
 			var loc = response.headers['location']
 			if(loc == undefined) loc = url
